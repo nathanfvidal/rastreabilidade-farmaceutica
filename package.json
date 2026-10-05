@@ -1,0 +1,24 @@
+{
+  "name": "rastreabilidade-farmaceutica-hardhat-dapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interface web simples integrada a um contrato Solidity implantado em uma blockchain local Hardhat.",
+  "scripts": {
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "seed": "hardhat run scripts/seed.js --network localhost",
+    "test": "hardhat test test/RastreabilidadeAbas.test.js",
+    "test:all": "hardhat test test/RastreabilidadeAbas.test.js --no-compile",
+    "dev": "vite frontend --host 127.0.0.1",
+    "build": "vite build frontend"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "3.1.3",
+    "hardhat": "2.29.1",
+    "vite": "8.3.2"
+  },
+  "dependencies": {
+    "ethers": "6.17.0"
+  }
+}
